@@ -1,0 +1,12 @@
+version: '2'
+services:
+  yonhs.basic.ubuntu.vnc.image:
+    build: ./
+    ports:
+    - "6080:80"
+    - "6022:22"
+    container_name: yonhs.basic.ubuntu.vnc.image
+    image: yonh/basic-ubuntu-vnc-image
+    #volumes:
+    #- ./filebeat.yml:/usr/share/filebeat/filebeat.yml
+    #- ./Logs:/in
