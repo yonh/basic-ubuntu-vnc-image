@@ -2,7 +2,7 @@ from dorowu/ubuntu-desktop-lxde-vnc
 ADD sources.list /etc/apt/sources.list
 
 run apt update && \
-    apt install -y --no-install-recommends golang fish openssh-server git
+    apt install -y --no-install-recommends golang ruby-dev fish openssh-server git
 
 ADD configs /tmp/configs
 RUN 
